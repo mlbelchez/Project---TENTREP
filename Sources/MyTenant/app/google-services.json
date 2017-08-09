@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "713321540067",
+    "firebase_url": "https://mytenant-2d272.firebaseio.com",
+    "project_id": "mytenant-2d272",
+    "storage_bucket": "mytenant-2d272.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713321540067:android:e51ef658d1e3147e",
+        "android_client_info": {
+          "package_name": "ph.edu.apc.mytenant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713321540067-pnaf72kacrnbpnasnrplnhb7hq11pq4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP1i2LmCsyaqxpFXWaBMco8i_w4vKtegs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

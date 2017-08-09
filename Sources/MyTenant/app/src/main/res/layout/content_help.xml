@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ph.edu.apc.mytenant.Help_Activity"
+    android:background="@drawable/bg7"
+    tools:showIn="@layout/activity_help">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Tenant"
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To add new record of tenant, \n (1) Go to navigation drawer and click my tenant \n (2) In the My tenant screen input the name of tenant and click add \n (3) After adding, click the inputted name \n (4) in the tenant screen enter the detail of tenant and click Edit Record.
+        \n \nTo delete record, \n (1) long press the tenant name and click delete in the menu.\n
+        \nTo calculate bill, \n (1) go to navigation drawer and click Calculator \n (2) In the calculator screen, enter the tenant bill detail and click Calculate to get result.
+        \nTo answer the Inspection Room Question, (1) Click on the Inspection Room and answer until the inputted answer shows in the end. "
+        android:id="@+id/textView6"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#050505" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@mipmap/home"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+</RelativeLayout>

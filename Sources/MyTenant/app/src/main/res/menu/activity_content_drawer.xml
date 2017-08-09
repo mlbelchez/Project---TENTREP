@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mybuilding"
+            android:icon="@drawable/ic_menu_send"
+            android:title="My Building" />
+        <item
+            android:id="@+id/activity_notif"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Room Inspection" />
+        <item
+            android:id="@+id/activity_calculator"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Calculator" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
