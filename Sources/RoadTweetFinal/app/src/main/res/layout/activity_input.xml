@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ph.edu.apc.roadtweetfinal.InputActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/lightGray"
+        android:layout_marginBottom="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your location here:"
+            android:id="@+id/inputLocation"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:padding="10dp"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightGray"
+        android:layout_marginBottom="5dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your roadtweet here:"
+            android:id="@+id/input"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:padding="10dp"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            android:background="@null"
+            android:tint="@color/blue"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/buttonChoose" />
+
+        <Button
+            android:text="RoadTweet"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:id="@+id/fab"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape"
+            android:layout_alignTop="@+id/buttonChoose"
+            android:padding="2dp"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/input"
+            android:id="@+id/imageView"/>
+    </LinearLayout>
+
+
+</LinearLayout>
