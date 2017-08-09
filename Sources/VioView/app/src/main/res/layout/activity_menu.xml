@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_text"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/apclogo"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:text="Add a violation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_violation_button" />
+
+    <Button
+        android:text="View violations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_violations_button" />
+</LinearLayout>

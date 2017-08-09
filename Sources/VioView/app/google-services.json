@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "849085317327",
+    "firebase_url": "https://vioview-9e9e3.firebaseio.com",
+    "project_id": "vioview-9e9e3",
+    "storage_bucket": "vioview-9e9e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849085317327:android:d739f312eab4dffa",
+        "android_client_info": {
+          "package_name": "mobapp.edu.apc.vioview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849085317327-ftue3v9fkfrr6smm8h4v2u9kouvigcn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobapp.edu.apc.vioview",
+            "certificate_hash": "6606D1A0F28E8BA3BC1F0F62998DCBA814291665"
+          }
+        },
+        {
+          "client_id": "849085317327-6jk48b57vsggjhmf8qjlcaemtgju4jgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa4iWIeJw834pRkFs4JUQ84z1v005o3ms"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849085317327-6jk48b57vsggjhmf8qjlcaemtgju4jgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
