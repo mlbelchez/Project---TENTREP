@@ -14,6 +14,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 /**
  * Created by Aira Joyce on 8/8/2017.
  */
@@ -79,7 +84,7 @@ public class activity_signup extends AppCompatActivity implements View.OnClickLi
         progressDialog.setMessage("Creating User Account...");
         progressDialog.show();
         //creating user
-        firebaseAuth.createUserWithEmailAndPassword(email,password.addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {

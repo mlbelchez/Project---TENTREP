@@ -9,8 +9,8 @@
         <item
             android:id="@+id/nav_forum"
             android:icon="@drawable/ic_menu_send"
-            android:title="Forum">
-        <menu>
+            android:title="Forum"/>
+
             <item
                 android:id="@+id/nav_profile"
                 android:icon="@drawable/ic_menu_send"
@@ -19,8 +19,6 @@
                 android:id="@+id/nav_activity"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Activity Log" />
-        </menu>
-        </item>
         <item
             android:id="@+id/nav_notification"
             android:icon="@drawable/ic_menu_send"
