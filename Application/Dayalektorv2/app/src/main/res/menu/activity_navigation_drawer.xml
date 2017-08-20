@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Bookmark" />
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Forum"/>
+
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_activity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Activity Log" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Notification" />
+    </group>
+
+    <item android:title="Settings"
+        android:icon="@drawable/ic_menu_manage">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Signout" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Copyrights" />
+        </menu>
+    </item>
+
+</menu>

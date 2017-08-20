@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white"> #FFFEFFFF </color>
+    <color name="button">#3bb3b3</color>
+    <color name="etborder">#3be7ca</color>
+    <color name="redA">#f1ef0629</color>
+    <color name="blueA">#f53b6fb3</color>
+    <color name="yellowA">#f4ffff1f</color>
+</resources>

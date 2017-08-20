@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ph.edu.apc.myapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".forum"
+        android:allowBackup="true"
+        android:icon="@mipmap/logov2"
+        android:label="Dayalektor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:label="Dayalektor"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".activity_signin" />
+        <activity android:name=".ui.activities.RegisterActivity" />
+        <activity android:name=".ui.activities.PostActivity"/>
+        <activity android:name=".nav_about" />
+        <activity android:name=".nav_copyrights" />
+        <activity android:name=".nav_forum" />
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+
+    </application>
+
+</manifest>
