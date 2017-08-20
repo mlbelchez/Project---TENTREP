@@ -49,18 +49,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                showDialogue();
-                // Intent i = new Intent(Content_Activity.this, tenant_form.class);
-                // startActivity(i);
-                //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //          .setAction("Action", null).show();
-//            }
-//        });
-//  return inflater.inflate(R.layout.fragment_main, container, false);
         mRootVIew = inflater.inflate(R.layout.fragment_home, container, false);
         FloatingActionButton fab = (FloatingActionButton) mRootVIew.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -68,8 +56,6 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 PostCreateDialog dialog = new PostCreateDialog();
                 dialog.show(getFragmentManager(), null);
-//                Intent i = new Intent(HomeFragment.this, PostCreateDialog.class);
-//                startActivity(i);
             }
         });
         init();
@@ -234,3 +220,4 @@ public class HomeFragment extends Fragment {
 
     }
 }
+

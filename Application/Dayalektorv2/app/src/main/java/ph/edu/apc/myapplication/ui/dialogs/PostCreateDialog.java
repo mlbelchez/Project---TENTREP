@@ -31,24 +31,24 @@ import static android.app.Activity.RESULT_OK;
 /**
  * Created by Aira Joyce on 8/13/2017.
  */
-public class PostCreateDialog extends DialogFragment {
+public class PostCreateDialog extends DialogFragment{
     private static final int RC_PHOTO_PICKER = 1;
     private Post mPost;
     private ProgressDialog mProgressDialog;
     private Uri mSelectedUri;
-//    private ImageView mPostDisplay;
+    private ImageView mPostDisplay;
     private View mRootView;
 
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
         mPost = new Post();
         mProgressDialog = new ProgressDialog(getContext());
 
-        mRootView = getActivity().getLayoutInflater().inflate(R.layout.create_post_dialog, null
-        );
-//        mPostDisplay = (ImageView) mRootView.findViewById(R.id.post_dialog_display);
+        mRootView = getActivity().getLayoutInflater().inflate(R.layout.create_post_dialog, null);
+        mPostDisplay = (ImageView) mRootView.findViewById(R.id.post_dialog_display);
 //        mRootView.findViewById(R.id.post_dialog_send_imageview).setOnClickListener(this);
 //        mRootView.findViewById(R.id.post_dialog_select_imageview).setOnClickListener(this);
         builder.setView(mRootView);
@@ -114,29 +114,28 @@ public class PostCreateDialog extends DialogFragment {
                 });
     }
 
-    private void addToMyPostList(String postId) {
-        FirebaseUtils.getPostRef().child(postId)
-                .setValue(mPost);
-        FirebaseUtils.getMyPostRef().child(postId).setValue(true)
-                .addOnCompleteListener(getActivity(), new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        mProgressDialog.dismiss();
-                        dismiss();
-                    }
-                });
+//    private void addToMyPostList(String postId) {
+//        FirebaseUtils.getPostRef().child(postId)
+//                .setValue(mPost);
+//        FirebaseUtils.getMyPostRef().child(postId).setValue(true)
+//                .addOnCompleteListener(getActivity(), new OnCompleteListener<Void>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<Void> task) {
+//                        mProgressDialog.dismiss();
+//                        dismiss();
+//                    }
+//                });
 
-        FirebaseUtils.addToMyRecord(Constants.POST_KEY, postId);
+//        FirebaseUtils.addToMyRecord(Constants.POST_KEY, postId);
     }
-
-
+//
 //    private void selectImage() {
 //        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
 //        intent.setType("image/jpeg");
 //        intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
 //        startActivityForResult(Intent.createChooser(intent, "Complete action using"), RC_PHOTO_PICKER);
 //    }
-
+//
 //    @Override
 //    public void onActivityResult(int requestCode, int resultCode, Intent data) {
 //        super.onActivityResult(requestCode, resultCode, data);

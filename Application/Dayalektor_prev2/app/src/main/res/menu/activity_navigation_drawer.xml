@@ -4,43 +4,38 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_bookmark"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_send"
             android:title="Bookmark" />
         <item
             android:id="@+id/nav_forum"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Forum">
-        <menu>
+            android:icon="@drawable/ic_menu_send"
+            android:title="Forum"/>
+
             <item
                 android:id="@+id/nav_profile"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_send"
                 android:title="Profile" />
             <item
                 android:id="@+id/nav_activity"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Activity Log" />
-        </menu>
-        </item>
         <item
             android:id="@+id/nav_notification"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_menu_send"
             android:title="Notification" />
     </group>
 
-    <item android:title="Settings">
+    <item android:title="Settings"
+        android:icon="@drawable/ic_menu_manage">
         <menu>
             <item
                 android:id="@+id/nav_about"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_send"
                 android:title="About" />
             <item
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Help" />
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Logout" />
         </menu>
     </item>
 

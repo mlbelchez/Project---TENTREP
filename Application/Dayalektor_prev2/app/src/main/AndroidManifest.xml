@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ph.edu.apc.myapplication">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="Dayalektor"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -18,7 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ph.edu.apc.signup"></activity>
+        <activity android:name=".activity_signin" />
+
+        <activity android:name=".activity_signup" />
+        <activity android:name=".nav_about" />
+        <activity android:name=".nav_help" />
+        
     </application>
 
 </manifest>
