@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/logov2"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dayalektor"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dayalektor is a mobile application that translates English or Filipino language into different Philippine dialects and vice versa. It has a vocabulary library, a massive compilation of words and phrases with a text-to-speech so that you can learn and practice on how to pronounce those words and phrases. Moreover, this application has a voice activation and voice dictation that auto-responds to any set of phrases you speak instantly and direct voice delivery as a better experience. Additionally, it has a forum where you can ask someone for correction of words or phrases (such as pronunciation, spelling, and grammar) when you can&apos;t find those in the application&apos;s library."
+        android:id="@+id/textView3"
+        android:textSize="15dp"
+        android:textColor="#020202"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
